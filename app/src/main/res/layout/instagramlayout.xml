@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/framelayout_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="Instagram"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_roundtextview"
+            android:hint="Phone number,email address or username"
+            android:padding="12dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ins" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_roundtextview"
+            android:hint="Password"
+            android:padding="12dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user" />
+
+        <Button
+            android:id="@+id/but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/deepskyblue"
+            android:gravity="center"
+            android:hint="Log In"
+            android:textSize="13sp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+        <TextView
+            android:id="@+id/forg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:text="Forgotten your login details? "
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.279"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/but" />
+
+        <TextView
+            android:id="@+id/tvln"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/darkgray"
+            android:textColor="@color/dimgray"
+            app:layout_constraintEnd_toStartOf="@+id/orr"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forg" />
+
+        <TextView
+            android:id="@+id/tvget"
+            android:layout_width="129dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Get help with signing in."
+            android:textColor="@color/darkblue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/orr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/forg"
+            app:layout_constraintTop_toTopOf="@+id/forg"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <TextView
+            android:id="@+id/orr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="OR"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forg" />
+
+        <TextView
+            android:id="@+id/tvlnee"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/darkgray"
+            android:textColor="@color/dimgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toEndOf="@+id/orr"
+            app:layout_constraintTop_toBottomOf="@+id/tvget" />
+
+        <TextView
+            android:id="@+id/tvlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            android:text="Log In With Facebook"
+            android:textColor="@color/facebookblue"
+            android:textColorHint="@color/deepskyblue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orr"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvdon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Don't have an account? "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvsign"
+            android:layout_width="134dp"
+            android:layout_height="19dp"
+            android:text=" Sign up."
+            android:textColor="@color/darkblue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvdon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvdon"
+            app:layout_constraintTop_toTopOf="@+id/tvdon"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/darkgray"
+            android:textColor="@color/dimgray"
+            app:layout_constraintBottom_toTopOf="@+id/tvdon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvlog"
+            app:layout_constraintHorizontal_bias="0.917"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvln"
+            app:srcCompat="@drawable/ic_facebook" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+

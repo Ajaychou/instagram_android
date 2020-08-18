@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewadapter"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/viewid"
+        app:layout_constraintEnd_toEndOf="@+id/textviewadapter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewid"
+        app:layout_constraintTop_toTopOf="@+id/viewid"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/abc_vector_test">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        android:id="@+id/textviewadapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="15sp"
+        android:text="Thebooknotes"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewadapter"
+        app:layout_constraintStart_toEndOf="@id/imageviewadapter"
+        app:layout_constraintTop_toTopOf="@+id/imageviewadapter" />
+
+    <View
+        android:id="@+id/viewid"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewthreedots"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewadapter"
+        app:layout_constraintEnd_toEndOf="@+id/viewid"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/textviewadapter"
+        app:layout_constraintTop_toTopOf="@+id/textviewadapter"
+        app:srcCompat="@drawable/ic_show_more_button_with_three_dots">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainimageid"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewid"
+        app:srcCompat="@drawable/demoimage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagelikeid"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainimageid"
+        app:srcCompat="@drawable/ic_heart">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagecomment"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imagelikeid"
+        app:layout_constraintTop_toTopOf="@+id/imagelikeid"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageshare"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/shareimageid"
+        app:layout_constraintTop_toTopOf="@+id/shareimageid"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shave">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shareimageid"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagecomment"
+        app:layout_constraintTop_toTopOf="@+id/imagecomment"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/send">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
